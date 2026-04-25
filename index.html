@@ -878,15 +878,57 @@ XU1 IN N001 N004 0 OUT N005 N003 N002 <span class="value">LT1374</span> top=10 b
 <section>
   <div class="container fade-in">
     <div class="cta-section">
-      <div class="section-label" style="text-align:center">Open Source</div>
+      <div class="section-label" style="text-align:center">AI Project</div>
       <h2>Try It Yourself</h2>
-      <p>The full pipeline is available on GitHub. Drop in any circuit image and get a simulation in under 5 minutes.</p>
-      <div style="font-family:'Space Mono',monospace;font-size:0.8rem;color:var(--gray);background:var(--card);border:1px solid var(--border);border-radius:8px;padding:1rem 1.5rem;display:inline-block;margin-bottom:2rem;text-align:left">
-        py run_local.py image your_circuit.jpeg --simulate --nodes V(N001) V(N002)
+      <p>Drop in any circuit image and get a validated LTspice simulation in under 5 minutes using the natural language agent interface.</p>
+
+      <!-- Terminal window -->
+      <div style="background:#080F17;border:1px solid var(--border);border-radius:12px;overflow:hidden;margin-bottom:2rem;text-align:left;max-width:620px;margin-left:auto;margin-right:auto;">
+        <!-- Terminal title bar -->
+        <div style="background:#1A2F45;padding:0.6rem 1rem;display:flex;align-items:center;gap:0.5rem;border-bottom:1px solid var(--border);">
+          <span style="width:10px;height:10px;border-radius:50%;background:#EF4444;display:inline-block"></span>
+          <span style="width:10px;height:10px;border-radius:50%;background:#F59E0B;display:inline-block"></span>
+          <span style="width:10px;height:10px;border-radius:50%;background:#10B981;display:inline-block"></span>
+          <span style="font-family:'Space Mono',monospace;font-size:0.65rem;color:var(--gray);margin-left:0.5rem">Terminal</span>
+        </div>
+        <!-- Terminal content -->
+        <div style="padding:1.2rem 1.5rem;font-family:'Space Mono',monospace;font-size:0.78rem;line-height:2;">
+          <div>
+            <span style="color:#4A6741"># Step 1: Launch the agent</span>
+          </div>
+          <div>
+            <span style="color:var(--tealLt)">(venv)</span>
+            <span style="color:var(--gray)"> C:\AI_Project&gt; </span>
+            <span style="color:var(--white)">py agent_runner_cl.py</span>
+          </div>
+          <div style="color:var(--amber);margin:0.2rem 0">
+            === AI Circuit Agent — Prompt-Based Pipeline ===
+          </div>
+          <div style="color:var(--gray);font-size:0.72rem">Type your prompt below. Type 'exit' to quit.</div>
+          <br>
+          <div>
+            <span style="color:#4A6741"># Step 2: Type your natural language prompt</span>
+          </div>
+          <div>
+            <span style="color:var(--green)">&gt;&gt; </span>
+            <span style="color:var(--white)">Generate netlist for appnote your_image.png and simulate nodes V(in) V(out)</span>
+          </div>
+          <br>
+          <div style="color:var(--gray);font-size:0.72rem">
+            <div>[Agent] Mode &nbsp;&nbsp;&nbsp;: <span style="color:var(--tealLt)">appnote</span></div>
+            <div>[Agent] Image &nbsp;&nbsp;: <span style="color:var(--tealLt)">your_image.png</span></div>
+            <div>[Agent] Simulate: <span style="color:var(--tealLt)">True</span></div>
+            <div>[Agent] Nodes &nbsp;&nbsp;: <span style="color:var(--tealLt)">['V(in)', 'V(out)']</span></div>
+          </div>
+          <br>
+          <div style="color:var(--green);font-size:0.72rem">
+            [Agent] Pipeline complete. ✓ Netlist generated. ✓ LTspice simulation done.
+          </div>
+        </div>
       </div>
-      <br>
+
       <a href="https://github.com/srinu923" target="_blank" class="btn btn-primary" style="font-size:1rem;padding:0.9rem 2.2rem">
-        ⭐ View on GitHub
+        Visit GitHub Profile
       </a>
     </div>
   </div>
