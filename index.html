@@ -576,7 +576,7 @@ footer a { color: var(--tealLt); text-decoration: none; }
   <div class="circuit-line h" style="width:150px;top:60%;right:3%"></div>
   <div class="circuit-line v" style="height:90px;top:60%;right:3%"></div>
 
-  <div class="hero-tag"> · AI Powered Circuit image to simulation Project · 2026</div>
+  <div class="hero-tag">AI Final Project · 2026</div>
 
   <h1>
     Sketch to<br>
@@ -874,6 +874,47 @@ XU1 IN N001 N004 0 OUT N005 N003 N002 <span class="value">LT1374</span> top=10 b
   </div>
 </section>
 
+<!-- Future Work -->
+<section style="background: rgba(255,255,255,0.015); border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
+  <div class="container fade-in">
+    <div class="section-label">What's Next</div>
+    <h2>Future Work</h2>
+    <div class="divider"></div>
+    <p>The current pipeline handles hand-drawn and app-note schematics end-to-end. Several exciting directions are planned to extend its capabilities further.</p>
+
+    <div style="display:flex;flex-direction:column;gap:1.5rem;margin-top:2rem">
+
+      <!-- Card 1 -->
+      <div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:1.8rem;display:flex;gap:1.5rem;align-items:flex-start;transition:border-color 0.3s" onmouseover="this.style.borderColor='var(--teal)'" onmouseout="this.style.borderColor='var(--border)'">
+        <div style="flex-shrink:0;width:3rem;height:3rem;border-radius:10px;background:rgba(10,126,164,0.15);border:1px solid rgba(10,126,164,0.3);display:flex;align-items:center;justify-content:center;font-size:1.4rem">🔌</div>
+        <div>
+          <h3 style="font-family:'Syne',sans-serif;font-size:1.05rem;font-weight:700;color:var(--white);margin-bottom:0.4rem">Expanded IC Template Library</h3>
+          <p style="color:var(--gray);font-size:0.9rem;margin:0">Currently the pipeline fully supports the LT1374HV buck converter template. The next step is adding support for a wider range of IC families — including <strong style="color:var(--tealLt)">LM317, TL431, UC3842, LM358</strong> and more — enabling automated netlist generation from a much broader set of datasheet schematics without any manual intervention.</p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:1.8rem;display:flex;gap:1.5rem;align-items:flex-start;transition:border-color 0.3s" onmouseover="this.style.borderColor='var(--amber)'" onmouseout="this.style.borderColor='var(--border)'">
+        <div style="flex-shrink:0;width:3rem;height:3rem;border-radius:10px;background:rgba(245,158,11,0.1);border:1px solid rgba(245,158,11,0.3);display:flex;align-items:center;justify-content:center;font-size:1.4rem">📈</div>
+        <div>
+          <h3 style="font-family:'Syne',sans-serif;font-size:1.05rem;font-weight:700;color:var(--white);margin-bottom:0.4rem">Waveform Analysis Agent</h3>
+          <p style="color:var(--gray);font-size:0.9rem;margin:0">Add an LLM-based agent that goes beyond plotting — it will <strong style="color:var(--amber)">interpret simulation waveforms</strong> in natural language, detect instability or convergence issues, recommend component value adjustments, and explain circuit behavior in plain English. Think of it as an AI circuit engineer reviewing your simulation results automatically.</p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:1.8rem;display:flex;gap:1.5rem;align-items:flex-start;transition:border-color 0.3s" onmouseover="this.style.borderColor='var(--green)'" onmouseout="this.style.borderColor='var(--border)'">
+        <div style="flex-shrink:0;width:3rem;height:3rem;border-radius:10px;background:rgba(16,185,129,0.1);border:1px solid rgba(16,185,129,0.3);display:flex;align-items:center;justify-content:center;font-size:1.4rem">📄</div>
+        <div>
+          <h3 style="font-family:'Syne',sans-serif;font-size:1.05rem;font-weight:700;color:var(--white);margin-bottom:0.4rem">Multi-page PDF Datasheet Support</h3>
+          <p style="color:var(--gray);font-size:0.9rem;margin:0">Currently the pipeline accepts a single image at a time. The next version will handle <strong style="color:var(--green)">full PDF datasheets with multiple pages</strong> — automatically scanning all figures, identifying the most relevant application circuit diagram, and extracting it for netlist generation. No more manual screenshot cropping required.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <!-- CTA -->
 <section>
   <div class="container fade-in">
@@ -937,7 +978,7 @@ XU1 IN N001 N004 0 OUT N005 N003 N002 <span class="value">LT1374</span> top=10 b
 <!-- Footer -->
 <footer>
   <p>Built by <a href="https://github.com/srinu923">srinu923</a></p>
-  <p style="margin-top:0.5rem;font-size:0.65rem">GPT-4.1-mini · LTspice 26.0.1 · Python · Multi-Agent Pipeline</p>
+  
 </footer>
 
 <script>
